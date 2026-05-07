@@ -19,6 +19,8 @@ temp/
 .vscode/
 .idea/
 
-# Test files
-_test_*
-*.ipynb_checkpoints/
+# Build artifacts
+build/
+dist/
+*.spec
+.venv/
