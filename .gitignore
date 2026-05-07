@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Excel outputs
+*.xlsx
+*.xls
+*_堆积柱形图_*.png
+*_图表_*.png
+
+# Temp
+temp/
+
+# Claude
+.claude/
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+_test_*
+*.ipynb_checkpoints/
