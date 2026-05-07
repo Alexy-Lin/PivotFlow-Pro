@@ -500,6 +500,8 @@ class PivotChartApp:
     def _show_empty(self, container: tk.Frame, icon: str, title: str, subtitle: str) -> None:
         for w in container.winfo_children():
             w.pack_forget()
+            w.grid_forget()
+            w.place_forget()
 
         placeholder = tk.Frame(container, bg=COLORS["surface"])
         placeholder.pack(fill=tk.BOTH, expand=True)
@@ -769,6 +771,8 @@ class PivotChartApp:
                   df: pd.DataFrame) -> None:
         for w in container.winfo_children():
             w.pack_forget()
+            w.grid_forget()
+            w.place_forget()
 
         vsb = ttk.Scrollbar(container, orient=tk.VERTICAL, command=tree.yview)
         hsb = ttk.Scrollbar(container, orient=tk.HORIZONTAL, command=tree.xview)
